@@ -8,29 +8,41 @@
   </head>
   <body>
     <h1>Formulario</h1>
-    <form action="">
+    <form action="" onsubmit="return checkForm()">
       <div>
         <label for="name">Name: </label>
-        <input type="text" name="name" id="required" />
+        <input type="text" name="name" autocomplete="off" class="required" />
       </div>
       <div>
         <label for="age">Age: </label>
-        <input type="number" name="age" id="required" />
+        <input type="number" name="age" autocomplete="off" class="required" />
       </div>
       <div>
         <label for="birthday">Birthday: </label>
-        <input type="date" name="birthday" id="required" />
+        <input
+          type="date"
+          name="birthday"
+          autocomplete="off"
+          class="required"
+        />
       </div>
       <div>
         <label for="email">Email: </label>
-        <input type="email" name="email" id="required" />
+        <input type="email" name="email" autocomplete="off" class="required" />
       </div>
       <div>
         <label for="pass">Password: </label>
-        <input type="password" name="pass" id="required" />
+        <input
+          type="password"
+          name="pass"
+          autocomplete="off"
+          class="required"
+        />
       </div>
-      <input type="submit" value="submit" />
+      <input autocomplete="off" type="submit" value="submit" />
     </form>
     <p class="msg-hidden">Preencha todos os campos</p>
+
+    <script src="js/validation.js"></script>
   </body>
 </html>
