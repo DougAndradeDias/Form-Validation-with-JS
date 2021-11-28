@@ -1,1 +1,3 @@
-# Form-Valitaion-with-JS
+# Form Validation with JS
+
+This is a simple script for forms validations on front-end
