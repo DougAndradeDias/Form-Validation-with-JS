@@ -1,45 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation with JS</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <h1>Formulario</h1>
-    <form action="" onsubmit="return checkForm()">
-      <div>
-        <label for="name">Name: </label>
-        <input type="text" name="name" autocomplete="off" class="required" />
-      </div>
-      <div>
-        <label for="age">Age: </label>
-        <input type="number" name="age" autocomplete="off" class="required" />
-      </div>
-      <div>
-        <label for="birthday">Birthday: </label>
-        <input
-          type="date"
-          name="birthday"
-          autocomplete="off"
-          class="required"
-        />
-      </div>
-      <div>
-        <label for="email">Email: </label>
-        <input type="email" name="email" autocomplete="off" class="required" />
-      </div>
-      <div>
-        <label for="pass">Password: </label>
-        <input
-          type="password"
-          name="pass"
-          autocomplete="off"
-          class="required"
-        />
-      </div>
-      <input autocomplete="off" type="submit" value="submit" />
+
+    <form action="" onsubmit="return checkForm()" autocomplete="off">
+      <fieldset>
+        <legend>Teste Fieldset</legend>
+        <div>
+          <label for="name">Name: </label>
+          <input type="text" name="name" autocomplete="off" class="required" />
+        </div>
+        <div>
+          <label for="age">Age: </label>
+          <input type="number" name="age" autocomplete="off" class="required" />
+        </div>
+        <div>
+          <label for="birthday">Birthday: </label>
+          <input
+            type="date"
+            name="birthday"
+            autocomplete="off"
+            class="required"
+          />
+        </div>
+        <div>
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            name="email"
+            autocomplete="off"
+            class="required"
+          />
+        </div>
+        <div>
+          <label for="pass">Password: </label>
+          <input
+            type="password"
+            name="pass"
+            autocomplete="off"
+            class="required"
+          />
+        </div>
+        <input autocomplete="off" type="submit" value="submit" />
+      </fieldset>
     </form>
     <p class="msg-hidden">Preencha todos os campos</p>
 

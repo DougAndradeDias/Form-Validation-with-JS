@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form fieldset div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+form fieldset div label,
+form fieldset div input {
+  height: 30px;
+  font-size: 25px;
+}
